@@ -55,11 +55,12 @@ function Chart({ data, label, heading }) {
   return (
     <>
     <h2>{heading}</h2>
+    <label>Number of Speakers:{" "}
       <input
         type="number"
         value={number}
         onChange={(evt) => setNumber(evt.target.value)}
-      ></input>{" "}
+      ></input></label>{" "}
       <span>{label}: {quals}</span>
       <table>
         <thead>
